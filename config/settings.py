@@ -170,3 +170,11 @@ SIMPLE_JWT = {
 # CORS Configuration
 CORS_ALLOW_ALL_ORIGINS = True
 
+# CSRF Trusted Origins for Production
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app",
+    "https://*.vercel.app",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
